@@ -7,5 +7,9 @@ def func_template(request):
     return render(request, 'func_template.html')
 
 
-class class_template(TemplateView):
+class ClassTemplate(TemplateView):
     template_name = 'class_template.html'
+
+
+class Main(TemplateView):
+    template_name = 'main.html'
