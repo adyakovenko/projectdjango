@@ -19,11 +19,19 @@ from django.urls import path
 from task2.views import func_template
 from task2.views import ClassTemplate
 from task2.views import Main
+from task3.views import MainMarket
+from task3.views import Market
+from task3.views import Cart
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Main.as_view()),
+
     path('func/', func_template),
-    path('class/', ClassTemplate.as_view())
+    path('class/', ClassTemplate.as_view()),
+
+    path('platform/', MainMarket),
+    path('platform/market/', Market),
+    path('platform/cart/', Cart)
 ]
