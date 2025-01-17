@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ text_title }}</title>
+</head>
+<body>
+{% block pagename %}
+<h1>Главная страница</h1>
+{% endblock %}
+
+{% block menu %}
+{% for i in stuff %}
+    <p>
+        <button>{{ text_button_buy }}</button>
+        {{ i }}
+    </p>
+{% endfor %}
+{% endblock %}
+
+{%block content %}
+<a href='/platform'><button>{{text_button_back}}</button></a>
+{% endblock %}
+
+</body>
+</html>
