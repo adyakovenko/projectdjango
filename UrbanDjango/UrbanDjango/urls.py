@@ -20,10 +20,11 @@ from task2.views import func_template
 from task2.views import ClassTemplate
 from task2.views import Main
 from task4.views import *
+from task5.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Main.as_view()),
+    #path('', Main.as_view()),
 
     path('func/', func_template),
     path('class/', ClassTemplate.as_view()),
@@ -31,5 +32,7 @@ urlpatterns = [
     path('platform/', main_market),
     path('platform/market/', market),
     path('platform/cart/', cart),
-    path('platform/base/', base)
+    path('platform/base/', base),
+    path('django_sign_up/', sign_up_by_django),
+    path('', sign_up_by_html)
 ]
