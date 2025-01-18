@@ -10,7 +10,7 @@ def MainMarket(request):
     return render(request, template_name, context)
 
 
-def Market(request):
+def market(request):
     template_name = 'task3_market.html'
     context = {
         'buy': 'Купить',
@@ -21,7 +21,7 @@ def Market(request):
     return render(request, template_name, context)
 
 
-def Cart(request):
+def cart(request):
     template_name = 'task3_cart.html'
     apologies = 'Простите, мы пока не умеем покупать.'
     context = {'sorry': apologies}
